@@ -27,6 +27,10 @@
 		FBEC1AC816CFC1B200442326 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1AC716CFC1B100442326 /* MapKit.framework */; };
 		FBEC1ACB16CFDE8D00442326 /* MAWSMachiawase.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */; };
 		FBEC1ACC16CFDE8D00442326 /* MAWSMachiawase.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */; };
+		FBEC1ACF16D09CE800442326 /* MAWSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */; };
+		FBEC1AD016D09CE800442326 /* MAWSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */; };
+		FBEC1AD316D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */; };
+		FBEC1AD416D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		FBEC1AC716CFC1B100442326 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FBEC1AC916CFDE8D00442326 /* MAWSMachiawase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSMachiawase.h; sourceTree = "<group>"; };
 		FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSMachiawase.m; sourceTree = "<group>"; };
+		FBEC1ACD16D09CE800442326 /* MAWSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSAnnotation.h; sourceTree = "<group>"; };
+		FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSAnnotation.m; sourceTree = "<group>"; };
+		FBEC1AD116D0BBC500442326 /* MAWSPinDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSPinDetailViewController.h; sourceTree = "<group>"; };
+		FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSPinDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,10 @@
 				FBEC1AA416CF987500442326 /* MainStoryboard_iPad.storyboard */,
 				FBEC1AA716CF987500442326 /* MAWSViewController.h */,
 				FBEC1AA816CF987500442326 /* MAWSViewController.m */,
+				FBEC1AD116D0BBC500442326 /* MAWSPinDetailViewController.h */,
+				FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */,
+				FBEC1ACD16D09CE800442326 /* MAWSAnnotation.h */,
+				FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */,
 				FBEC1AC916CFDE8D00442326 /* MAWSMachiawase.h */,
 				FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */,
 				FBEC1A9016CF987500442326 /* Supporting Files */,
@@ -289,6 +301,8 @@
 				FBEC1A9A16CF987500442326 /* MAWSAppDelegate.m in Sources */,
 				FBEC1AA916CF987500442326 /* MAWSViewController.m in Sources */,
 				FBEC1ACB16CFDE8D00442326 /* MAWSMachiawase.m in Sources */,
+				FBEC1ACF16D09CE800442326 /* MAWSAnnotation.m in Sources */,
+				FBEC1AD316D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +312,8 @@
 			files = (
 				FBEC1ABE16CF987500442326 /* machiawase_iosTests.m in Sources */,
 				FBEC1ACC16CFDE8D00442326 /* MAWSMachiawase.m in Sources */,
+				FBEC1AD016D09CE800442326 /* MAWSAnnotation.m in Sources */,
+				FBEC1AD416D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

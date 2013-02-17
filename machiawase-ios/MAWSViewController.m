@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,18 +41,47 @@
 
 - (void)didReceiveResult:(NSDictionary *)result
 {
-    CLLocationCoordinate2D location;
-    location.latitude = [result[@"latitude"] doubleValue];
-    location.longitude = [result[@"longtitude"] doubleValue];
-    [_mapView setCenterCoordinate:location];
+    _mapView.hidden = NO;
     
-    MKCoordinateRegion cr = _mapView.region;
-    cr.center = location;
-    cr.span.latitudeDelta = 0.2;
-    cr.span.longitudeDelta = 0.2;
-    [_mapView setRegion:cr];
+    CLLocationCoordinate2D coordinate;
+    coordinate.latitude = [result[@"latitude"] doubleValue];
+    coordinate.longitude = [result[@"longtitude"] doubleValue];
+    [_mapView setCenterCoordinate:coordinate];
     
-    _resultText.text = result[@"address"];
+    // アノテーションを地図へ追加
+    MAWSAnnotation *annotation = [[MAWSAnnotation alloc] initWithCoordinate:coordinate];
+    annotation.title = result[@"address"];
+    [_mapView addAnnotation:annotation];
+    
+    MKCoordinateRegion region = _mapView.region;
+    region.center = coordinate;
+    region.span.latitudeDelta = 0.2;
+    region.span.longitudeDelta = 0.2;
+    [_mapView setRegion:region];
 }
 
+// アノテーションが表示される時に呼ばれる
+-(MKAnnotationView*)mapView:(MKMapView*)mapView
+          viewForAnnotation:(id)annotation{
+    
+    static NSString *PinIdentifier = @"Pin";
+    MKPinAnnotationView *pinAnnotationView = (MKPinAnnotationView*)[_mapView dequeueReusableAnnotationViewWithIdentifier:PinIdentifier];
+    if(pinAnnotationView == nil){
+        pinAnnotationView = [[MKPinAnnotationView alloc]
+                initWithAnnotation:annotation reuseIdentifier:PinIdentifier];
+        pinAnnotationView.animatesDrop = YES;  // アニメーションをする
+        pinAnnotationView.canShowCallout = YES;  // ピンタップ時にコールアウトを表示する
+        pinAnnotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    }
+    return pinAnnotationView;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    // push the detail view
+    [self performSegueWithIdentifier:@"detail" sender:self];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+}
 @end
