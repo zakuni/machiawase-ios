@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Machiawase-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="MAWSViewController" sceneMemberID="viewController">
@@ -12,28 +12,23 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Place" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4JV-HE-exx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Place" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4JV-HE-exx">
                                 <accessibility key="accessibilityConfiguration" label="あああ"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="firstTextFieldEndOnExit:" destination="2" eventType="editingDidEndOnExit" id="9sz-fz-Pea"/>
+                                    <outlet property="delegate" destination="2" id="uo0-ap-loE"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Place" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5XW-qX-CBO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Place" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5XW-qX-CBO">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPZ-77-Vlu">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Rendezvous">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <action selector="rendezvousButtonPushed:" destination="2" eventType="touchUpInside" id="t3A-sX-TiT"/>
+                                    <action selector="secondTextFieldEndOnExit:" destination="2" eventType="editingDidEndOnExit" id="iVh-As-ar1"/>
+                                    <outlet property="delegate" destination="2" id="0sY-cz-0up"/>
                                 </connections>
-                            </button>
+                            </textField>
                             <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AVd-4Z-8A5">
                                 <connections>
                                     <outlet property="delegate" destination="2" id="NAJ-Yq-Z5K"/>
@@ -49,14 +44,12 @@
                             <constraint firstItem="4JV-HE-exx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="M9A-L8-xdG"/>
                             <constraint firstItem="4JV-HE-exx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MGY-4E-HPI"/>
                             <constraint firstAttribute="trailing" secondItem="5XW-qX-CBO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="MSS-Lx-RPH"/>
+                            <constraint firstItem="AVd-4Z-8A5" firstAttribute="top" secondItem="5XW-qX-CBO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="N5P-u6-fX8"/>
                             <constraint firstItem="5XW-qX-CBO" firstAttribute="top" secondItem="4JV-HE-exx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="VJd-8M-Zc5"/>
                             <constraint firstItem="5XW-qX-CBO" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="c3c-yU-AiC"/>
-                            <constraint firstItem="sPZ-77-Vlu" firstAttribute="centerX" secondItem="5XW-qX-CBO" secondAttribute="centerX" type="default" id="dFM-0G-POV"/>
-                            <constraint firstItem="AVd-4Z-8A5" firstAttribute="top" secondItem="sPZ-77-Vlu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eBk-2u-XQt"/>
-                            <constraint firstItem="sPZ-77-Vlu" firstAttribute="top" secondItem="5XW-qX-CBO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="m3B-i9-qXt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SKy-9D-CmH"/>
+                    <navigationItem key="navigationItem" title="Machiawase" id="SKy-9D-CmH"/>
                     <connections>
                         <outlet property="firstPlaceTextField" destination="4JV-HE-exx" id="0j0-6R-RGh"/>
                         <outlet property="mapView" destination="AVd-4Z-8A5" id="ru0-e8-LWy"/>
@@ -72,37 +65,35 @@
         <scene sceneID="1lV-W6-yNK">
             <objects>
                 <tableViewController id="3jb-Tp-EQG" customClass="MAWSPinDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="4Pa-Oe-D2q">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="4Pa-Oe-D2q">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="dXI-ni-NvP">
+                            <tableViewSection id="ngm-Ib-HqL">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Sbz-ns-rTo">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="aES-YG-dhG" detailTextLabel="So9-rh-Drg" style="IBUITableViewCellStyleValue1" id="Sbz-ns-rTo">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rh2-uO-BZf">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="W2a-Zn-QLl">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aES-YG-dhG">
+                                                    <rect key="frame" x="10" y="11" width="63" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="47" id="So9-rh-Drg">
+                                                    <rect key="frame" x="243" y="11" width="47" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
@@ -115,6 +106,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="daC-qx-1ec"/>
+                    <connections>
+                        <outlet property="addressCell" destination="Sbz-ns-rTo" id="tTF-BS-1ph"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbw-5H-pcP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,11 +136,16 @@
     <classes>
         <class className="MAWSPinDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MAWSPinDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addressCell" candidateClass="UITableViewCell"/>
+            </relationships>
         </class>
         <class className="MAWSViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MAWSViewController.h"/>
             <relationships>
+                <relationship kind="action" name="firstTextFieldEndOnExit:" candidateClass="UITextField"/>
                 <relationship kind="action" name="rendezvousButtonPushed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="secondTextFieldEndOnExit:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="firstPlaceTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="secondPlaceTextField" candidateClass="UITextField"/>

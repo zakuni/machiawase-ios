@@ -10,6 +10,8 @@
 
 @interface MAWSViewController ()
 
+@property NSDictionary *rendezvousPlace;
+
 @end
 
 @implementation MAWSViewController
@@ -17,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    //[self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,10 +28,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)rendezvousButtonPushed:(UIButton *)sender {
-    // close keyboard
-    [self.view endEditing:YES];
+- (IBAction)firstTextFieldEndOnExit:(UITextField *)sender {
+    [_secondPlaceTextField becomeFirstResponder];
+}
 
+- (IBAction)secondTextFieldEndOnExit:(UITextField *)sender {
+    [self.view endEditing:YES];
+    [self doRendezvous];
+}
+
+- (void)doRendezvous
+{
     NSString *place1 = _firstPlaceTextField.text;
     NSString *place2 = _secondPlaceTextField.text;
     
@@ -41,16 +50,17 @@
 
 - (void)didReceiveResult:(NSDictionary *)result
 {
+    _rendezvousPlace = result;
     _mapView.hidden = NO;
     
     CLLocationCoordinate2D coordinate;
-    coordinate.latitude = [result[@"latitude"] doubleValue];
-    coordinate.longitude = [result[@"longtitude"] doubleValue];
+    coordinate.latitude = [_rendezvousPlace[@"latitude"] doubleValue];
+    coordinate.longitude = [_rendezvousPlace[@"longtitude"] doubleValue];
     [_mapView setCenterCoordinate:coordinate];
     
     // アノテーションを地図へ追加
     MAWSAnnotation *annotation = [[MAWSAnnotation alloc] initWithCoordinate:coordinate];
-    annotation.title = result[@"address"];
+    annotation.title = _rendezvousPlace[@"address"];
     [_mapView addAnnotation:annotation];
     
     MKCoordinateRegion region = _mapView.region;
@@ -83,5 +93,7 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    MAWSPinDetailViewController *pinDetailViewController = [segue destinationViewController];
+    pinDetailViewController.address = _rendezvousPlace[@"address"];
 }
 @end

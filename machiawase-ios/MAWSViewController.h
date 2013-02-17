@@ -19,4 +19,7 @@
 
 - (IBAction)rendezvousButtonPushed:(UIButton *)sender;
 
+- (IBAction)firstTextFieldEndOnExit:(UITextField *)sender;
+- (IBAction)secondTextFieldEndOnExit:(UITextField *)sender;
+
 @end

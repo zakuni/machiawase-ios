@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MAWSPinDetailViewController : UITableViewController
+@property NSString *address;
+@property (weak, nonatomic) IBOutlet UITableViewCell *addressCell;
 
 @end

@@ -104,7 +104,6 @@
 		FBEC1A7D16CF987400442326 = {
 			isa = PBXGroup;
 			children = (
-				FBEC1AC716CFC1B100442326 /* MapKit.framework */,
 				FBEC1A8F16CF987500442326 /* machiawase-ios */,
 				FBEC1AB616CF987500442326 /* machiawase-iosTests */,
 				FBEC1A8816CF987400442326 /* Frameworks */,
@@ -124,6 +123,7 @@
 		FBEC1A8816CF987400442326 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBEC1AC716CFC1B100442326 /* MapKit.framework */,
 				FBEC1A8916CF987400442326 /* UIKit.framework */,
 				FBEC1A8B16CF987400442326 /* Foundation.framework */,
 				FBEC1A8D16CF987400442326 /* CoreGraphics.framework */,

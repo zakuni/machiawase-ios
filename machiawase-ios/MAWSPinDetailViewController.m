@@ -23,6 +23,18 @@
     return self;
 }
 
+- (CGFloat)tableView:
+(UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath == 0) {
+        return 70;
+    }
+    else{
+        return 80;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,12 +43,13 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    _addressCell.detailTextLabel.text = _address;
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
