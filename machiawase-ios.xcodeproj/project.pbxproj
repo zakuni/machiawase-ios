@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB48676416DA0F0D008C1A28 /* MAWSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48676316DA0F0D008C1A28 /* MAWSTableViewController.m */; };
 		FBEC1A8A16CF987400442326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8916CF987400442326 /* UIKit.framework */; };
 		FBEC1A8C16CF987400442326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8B16CF987400442326 /* Foundation.framework */; };
 		FBEC1A8E16CF987500442326 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8D16CF987400442326 /* CoreGraphics.framework */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB48676216DA0F0D008C1A28 /* MAWSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSTableViewController.h; sourceTree = "<group>"; };
+		FB48676316DA0F0D008C1A28 /* MAWSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSTableViewController.m; sourceTree = "<group>"; };
 		FBEC1A8616CF987400442326 /* machiawase-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "machiawase-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEC1A8916CF987400442326 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBEC1A8B16CF987400442326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -139,6 +142,8 @@
 				FBEC1A9916CF987500442326 /* MAWSAppDelegate.m */,
 				FBEC1AA116CF987500442326 /* MainStoryboard_iPhone.storyboard */,
 				FBEC1AA416CF987500442326 /* MainStoryboard_iPad.storyboard */,
+				FB48676216DA0F0D008C1A28 /* MAWSTableViewController.h */,
+				FB48676316DA0F0D008C1A28 /* MAWSTableViewController.m */,
 				FBEC1AA716CF987500442326 /* MAWSViewController.h */,
 				FBEC1AA816CF987500442326 /* MAWSViewController.m */,
 				FBEC1AD116D0BBC500442326 /* MAWSPinDetailViewController.h */,
@@ -303,6 +308,7 @@
 				FBEC1ACB16CFDE8D00442326 /* MAWSMachiawase.m in Sources */,
 				FBEC1ACF16D09CE800442326 /* MAWSAnnotation.m in Sources */,
 				FBEC1AD316D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */,
+				FB48676416DA0F0D008C1A28 /* MAWSTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +502,7 @@
 				FBEC1AC316CF987500442326 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBEC1AC416CF987500442326 /* Build configuration list for PBXNativeTarget "machiawase-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				FBEC1AC616CF987500442326 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

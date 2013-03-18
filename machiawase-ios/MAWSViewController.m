@@ -28,6 +28,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)rendezvousButtonPushed:(UIButton *)sender
+{
+    [self doRendezvous];
+}
+
 - (IBAction)firstTextFieldEndOnExit:(UITextField *)sender {
     [_secondPlaceTextField becomeFirstResponder];
 }
@@ -45,17 +50,21 @@
     NSLog(@"%@", place1);
     NSLog(@"%@", place2);
     MAWSMachiawase *machiawase = [[MAWSMachiawase alloc]init];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    [_indicatorView startAnimating];
     [machiawase rendezvous:place1 with:place2 delegate:self];
 }
 
 - (void)didReceiveResult:(NSDictionary *)result
 {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    [_indicatorView stopAnimating];
     _rendezvousPlace = result;
     _mapView.hidden = NO;
     
     CLLocationCoordinate2D coordinate;
     coordinate.latitude = [_rendezvousPlace[@"latitude"] doubleValue];
-    coordinate.longitude = [_rendezvousPlace[@"longtitude"] doubleValue];
+    coordinate.longitude = [_rendezvousPlace[@"longitude"] doubleValue];
     [_mapView setCenterCoordinate:coordinate];
     
     // アノテーションを地図へ追加

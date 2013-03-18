@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstPlaceTextField;
 @property (weak, nonatomic) IBOutlet UITextField *secondPlaceTextField;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
 
 - (IBAction)rendezvousButtonPushed:(UIButton *)sender;
 
