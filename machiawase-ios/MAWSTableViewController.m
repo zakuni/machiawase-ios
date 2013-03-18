@@ -7,6 +7,7 @@
 //
 
 #import "MAWSTableViewController.h"
+#import "MAWSMachiawase.h"
 
 @interface MAWSTableViewController ()
 
@@ -123,6 +124,43 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     UITableViewCell *cell = [self.placeTableView cellForRowAtIndexPath:indexPath];
     UITextField *textField = (UITextField *)[cell viewWithTag:2];
-    NSLog(@"%@", textField.text);
+    NSString *place1 = textField.text;
+    
+    indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+    cell = [self.placeTableView cellForRowAtIndexPath:indexPath];
+    textField = (UITextField *)[cell viewWithTag:2];
+    NSString *place2 = textField.text;
+    
+    NSLog(@"%@", place1);
+    NSLog(@"%@", place2);
+    MAWSMachiawase *machiawase = [[MAWSMachiawase alloc]init];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+//    [_indicatorView startAnimating];
+    [machiawase rendezvous:place1 with:place2 delegate:self];
+}
+
+- (void)didReceiveResult:(NSDictionary *)result
+{
+    NSLog(@"%@", result);
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+//    [_indicatorView stopAnimating];
+//    _rendezvousPlace = result;
+//    _mapView.hidden = NO;
+//    
+//    CLLocationCoordinate2D coordinate;
+//    coordinate.latitude = [_rendezvousPlace[@"latitude"] doubleValue];
+//    coordinate.longitude = [_rendezvousPlace[@"longitude"] doubleValue];
+//    [_mapView setCenterCoordinate:coordinate];
+//    
+//    // アノテーションを地図へ追加
+//    MAWSAnnotation *annotation = [[MAWSAnnotation alloc] initWithCoordinate:coordinate];
+//    annotation.title = _rendezvousPlace[@"address"];
+//    [_mapView addAnnotation:annotation];
+//    
+//    MKCoordinateRegion region = _mapView.region;
+//    region.center = coordinate;
+//    region.span.latitudeDelta = 0.2;
+//    region.span.longitudeDelta = 0.2;
+//    [_mapView setRegion:region];
 }
 @end
