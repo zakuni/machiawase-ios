@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MAWSTableViewController : UITableViewController
+{
+    UIView *footerView;
+}
 - (IBAction)buttonPushed:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UITableView *placeTableView;
 

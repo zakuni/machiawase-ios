@@ -35,6 +35,25 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 40.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (footerView == nil) {
+        footerView = [[UIView alloc] init];
+
+        UIButton* rendezvousButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        rendezvousButton.frame = CGRectMake(9, 10, 302, 42);
+        [rendezvousButton setTitle:@"Footer" forState:UIControlStateNormal];
+        [rendezvousButton addTarget:self action:@selector(buttonPushed:) forControlEvents:UIControlEventTouchUpInside];
+
+        [footerView addSubview:rendezvousButton];
+        return footerView;
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
