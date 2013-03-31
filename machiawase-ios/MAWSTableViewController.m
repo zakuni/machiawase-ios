@@ -50,8 +50,9 @@
         [rendezvousButton addTarget:self action:@selector(buttonPushed:) forControlEvents:UIControlEventTouchUpInside];
 
         [footerView addSubview:rendezvousButton];
-        return footerView;
     }
+    
+    return footerView;
 }
 
 - (void)didReceiveMemoryWarning
