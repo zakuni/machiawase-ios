@@ -57,12 +57,36 @@
                     <navigationItem key="navigationItem" title="Rendezvous" id="M3A-Qf-sxI"/>
                     <connections>
                         <outlet property="placeTableView" destination="Fni-0q-SKP" id="222-dF-9lY"/>
-                        <segue destination="3jb-Tp-EQG" kind="push" id="hd9-nz-iEn"/>
+                        <segue destination="KMk-bS-DtI" kind="push" identifier="map" id="pV4-UV-Wg5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5a-ob-A1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="307" y="-143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="slr-ub-cIR">
+            <objects>
+                <viewController id="KMk-bS-DtI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWW-XJ-9jH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="G7l-tT-JDQ"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="trailing" secondItem="aWW-XJ-9jH" secondAttribute="trailing" type="default" id="1CA-PH-930"/>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="top" secondItem="aWW-XJ-9jH" secondAttribute="top" type="default" id="4eo-eZ-bdg"/>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="bottom" secondItem="aWW-XJ-9jH" secondAttribute="bottom" type="default" id="5ZH-Cc-I4v"/>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="leading" secondItem="aWW-XJ-9jH" secondAttribute="leading" type="default" id="UBu-pM-Cpc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z7K-07-RdN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Div-na-bOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="-119"/>
         </scene>
         <!--View Controller - Machiawase-->
         <scene sceneID="5">
@@ -132,7 +156,7 @@
             <objects>
                 <tableViewController id="3jb-Tp-EQG" customClass="MAWSPinDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="4Pa-Oe-D2q">
-                        <rect key="frame" x="0.0" y="64" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -199,12 +223,39 @@
             <point key="canvasLocation" x="-154" y="294"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MAWSPinDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAWSPinDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addressCell" candidateClass="UITableViewCell"/>
+            </relationships>
+        </class>
+        <class className="MAWSTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAWSTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPushed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="placeTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MAWSViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAWSViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="firstTextFieldEndOnExit:" candidateClass="UITextField"/>
+                <relationship kind="action" name="rendezvousButtonPushed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="secondTextFieldEndOnExit:" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="firstPlaceTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="indicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="secondPlaceTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="5L2-t7-wd5"/>
-    </inferredMetricsTieBreakers>
 </document>

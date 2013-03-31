@@ -46,7 +46,7 @@
 
         UIButton* rendezvousButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         rendezvousButton.frame = CGRectMake(9, 10, 302, 42);
-        [rendezvousButton setTitle:@"Footer" forState:UIControlStateNormal];
+        [rendezvousButton setTitle:@"rendezvous" forState:UIControlStateNormal];
         [rendezvousButton addTarget:self action:@selector(buttonPushed:) forControlEvents:UIControlEventTouchUpInside];
 
         [footerView addSubview:rendezvousButton];
@@ -163,6 +163,8 @@
 {
     NSLog(@"%@", result);
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    [self performSegueWithIdentifier:@"map" sender:self];
+    
 //    [_indicatorView stopAnimating];
 //    _rendezvousPlace = result;
 //    _mapView.hidden = NO;
