@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MAWSMapViewController.h"
+#import "MAWSAnnotation.h"
 
 @interface MAWSTableViewController : UITableViewController
 {
     UIView *footerView;
+    NSDictionary *rendezvousResult;
 }
 - (IBAction)buttonPushed:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UITableView *placeTableView;
-
 @end

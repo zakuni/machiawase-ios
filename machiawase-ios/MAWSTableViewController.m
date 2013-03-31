@@ -45,7 +45,7 @@
         footerView = [[UIView alloc] init];
 
         UIButton* rendezvousButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        rendezvousButton.frame = CGRectMake(9, 10, 302, 42);
+        rendezvousButton.frame = CGRectMake(8, 10, 304, 42);
         [rendezvousButton setTitle:@"rendezvous" forState:UIControlStateNormal];
         [rendezvousButton addTarget:self action:@selector(buttonPushed:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -162,27 +162,16 @@
 - (void)didReceiveResult:(NSDictionary *)result
 {
     NSLog(@"%@", result);
+    rendezvousResult = result;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     [self performSegueWithIdentifier:@"map" sender:self];
     
 //    [_indicatorView stopAnimating];
-//    _rendezvousPlace = result;
-//    _mapView.hidden = NO;
-//    
-//    CLLocationCoordinate2D coordinate;
-//    coordinate.latitude = [_rendezvousPlace[@"latitude"] doubleValue];
-//    coordinate.longitude = [_rendezvousPlace[@"longitude"] doubleValue];
-//    [_mapView setCenterCoordinate:coordinate];
-//    
-//    // アノテーションを地図へ追加
-//    MAWSAnnotation *annotation = [[MAWSAnnotation alloc] initWithCoordinate:coordinate];
-//    annotation.title = _rendezvousPlace[@"address"];
-//    [_mapView addAnnotation:annotation];
-//    
-//    MKCoordinateRegion region = _mapView.region;
-//    region.center = coordinate;
-//    region.span.latitudeDelta = 0.2;
-//    region.span.longitudeDelta = 0.2;
-//    [_mapView setRegion:region];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    MAWSMapViewController *mapViewController = [segue destinationViewController];
+    mapViewController.rendezvousPlace = rendezvousResult;
 }
 @end
