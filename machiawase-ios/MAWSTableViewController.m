@@ -85,6 +85,9 @@
     label = (UILabel *)[cell viewWithTag:1];
     label.text = [NSString stringWithFormat:@"Place %d:", indexPath.row + 1];
     
+    UITextField *textField = (UITextField *)[cell viewWithTag:2];
+    textField.returnKeyType = UIReturnKeyGo;
+    
     return cell;
 }
 
