@@ -87,6 +87,9 @@
     
     UITextField *textField = (UITextField *)[cell viewWithTag:2];
     textField.returnKeyType = UIReturnKeyGo;
+    [textField addTarget:self
+                  action:@selector(buttonPushed:)
+        forControlEvents:UIControlEventEditingDidEndOnExit];
     
     return cell;
 }
