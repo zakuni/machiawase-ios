@@ -1,0 +1,27 @@
+
+/* Class = "IBUITextField"; accessibilityLabel = "あああ"; ObjectID = "4JV-HE-exx"; */
+"4JV-HE-exx.accessibilityLabel" = "あああ";
+
+/* Class = "IBUITextField"; placeholder = "First Place"; ObjectID = "4JV-HE-exx"; */
+"4JV-HE-exx.placeholder" = "First Place";
+
+/* Class = "IBUITextField"; placeholder = "Second Place"; ObjectID = "5XW-qX-CBO"; */
+"5XW-qX-CBO.placeholder" = "Second Place";
+
+/* Class = "IBUINavigationItem"; title = "Rendezvous"; ObjectID = "M3A-Qf-sxI"; */
+"M3A-Qf-sxI.title" = "街合わせ";
+
+/* Class = "IBUINavigationItem"; title = "Machiawase"; ObjectID = "SKy-9D-CmH"; */
+"SKy-9D-CmH.title" = "Machiawase";
+
+/* Class = "IBUILabel"; text = "Detail"; ObjectID = "So9-rh-Drg"; */
+"So9-rh-Drg.text" = "Detail";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Vz4-4j-eJC"; */
+"Vz4-4j-eJC.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Address"; ObjectID = "aES-YG-dhG"; */
+"aES-YG-dhG.text" = "Address";
+
+/* Class = "IBUITextField"; placeholder = "Place"; ObjectID = "slm-gj-cg1"; */
+"slm-gj-cg1.placeholder" = "Place";

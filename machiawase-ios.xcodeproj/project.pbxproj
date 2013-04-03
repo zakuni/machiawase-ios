@@ -95,6 +95,13 @@
 		FB958318170C599A00129CB2 /* NSDictionary+MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MessagePack.h"; sourceTree = "<group>"; };
 		FB958319170C599A00129CB2 /* NSDictionary+MessagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MessagePack.m"; sourceTree = "<group>"; };
 		FB95831A170C599A00129CB2 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		FB958327170C629D00129CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		FB958328170C629D00129CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		FB95832A170C62CF00129CB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
+		FB95832B170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
+		FB95832C170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
+		FB95832D170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB95832E170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBEC1A8616CF987400442326 /* machiawase-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "machiawase-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEC1A8916CF987400442326 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBEC1A8B16CF987400442326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,8 +115,6 @@
 		FBEC1A9B16CF987500442326 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FBEC1A9D16CF987500442326 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FBEC1A9F16CF987500442326 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FBEC1AA216CF987500442326 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		FBEC1AA516CF987500442326 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		FBEC1AA716CF987500442326 /* MAWSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAWSViewController.h; sourceTree = "<group>"; };
 		FBEC1AA816CF987500442326 /* MAWSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAWSViewController.m; sourceTree = "<group>"; };
 		FBEC1AAF16CF987500442326 /* machiawase-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "machiawase-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -360,6 +365,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
+				ja,
 			);
 			mainGroup = FBEC1A7D16CF987400442326;
 			productRefGroup = FBEC1A8716CF987400442326 /* Products */;
@@ -466,6 +473,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FBEC1A9316CF987500442326 /* en */,
+				FB95832D170C635F00129CB2 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -473,7 +481,9 @@
 		FBEC1AA116CF987500442326 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBEC1AA216CF987500442326 /* en */,
+				FB958327170C629D00129CB2 /* Base */,
+				FB95832A170C62CF00129CB2 /* en */,
+				FB95832B170C635F00129CB2 /* ja */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -481,7 +491,8 @@
 		FBEC1AA416CF987500442326 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBEC1AA516CF987500442326 /* en */,
+				FB958328170C629D00129CB2 /* Base */,
+				FB95832C170C635F00129CB2 /* ja */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
@@ -490,6 +501,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FBEC1ABA16CF987500442326 /* en */,
+				FB95832E170C635F00129CB2 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
