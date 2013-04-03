@@ -15,7 +15,7 @@ id theDelegate;
 {
     theDelegate = delegate;
     
-    NSMutableString *url = [[NSMutableString alloc]initWithString:@"http://machiawase.herokuapp.com/rendezvous.json?"];
+    NSMutableString *url = [[NSMutableString alloc]initWithString:@"http://machiawase.herokuapp.com/rendezvous.msgpack?"];
     [url appendString:place1];
     [url appendString:@","];
     [url appendString:place2];
@@ -29,8 +29,7 @@ id theDelegate;
 {
     NSLog(@"%@", [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
     
-    NSError *jsonParsingError = nil;
-    NSDictionary *resultDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonParsingError];
+    NSDictionary *resultDictionary = [data messagePackParse];
     
     [theDelegate didReceiveResult:resultDictionary];
 }

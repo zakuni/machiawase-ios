@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MessagePack.h"
 
 @protocol MAWSMachiawaseDelegate <NSObject>
 
