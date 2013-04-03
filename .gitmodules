@@ -1,0 +1,3 @@
+[submodule "machiawase-ios/msgpack"]
+	path = machiawase-ios/msgpack
+	url = https://github.com/msgpack/msgpack-objectivec.git
