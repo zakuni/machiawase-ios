@@ -44,6 +44,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)viewWillAppear:(BOOL)animated
 {
     _addressCell.detailTextLabel.text = _address;
+    _nearStationCell.detailTextLabel.text = _nearStation;
 //    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 

@@ -76,5 +76,6 @@
 {    
     MAWSPinDetailViewController *pinDetailViewController = [segue destinationViewController];
     pinDetailViewController.address = _rendezvousPlace[@"address"];
+    pinDetailViewController.nearStation = _rendezvousPlace[@"near_station"];
 }
 @end

@@ -11,5 +11,7 @@
 @interface MAWSPinDetailViewController : UITableViewController
 @property NSString *address;
 @property (weak, nonatomic) IBOutlet UITableViewCell *addressCell;
+@property NSString *nearStation;
+@property (weak, nonatomic) IBOutlet UITableViewCell *nearStationCell;
 
 @end

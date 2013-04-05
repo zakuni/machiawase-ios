@@ -1,3 +1,4 @@
+
 /* Class = "IBUITextField"; accessibilityLabel = "あああ"; ObjectID = "4JV-HE-exx"; */
 "4JV-HE-exx.accessibilityLabel" = "あああ";
 
@@ -11,13 +12,13 @@
 "KDj-Nk-dXV.text" = "Detail";
 
 /* Class = "IBUINavigationItem"; title = "Rendezvous"; ObjectID = "M3A-Qf-sxI"; */
-"M3A-Qf-sxI.title" = "街合わせ";
+"M3A-Qf-sxI.title" = "Rendezvous";
 
 /* Class = "IBUILabel"; text = "Detail"; ObjectID = "Ptw-cf-zUg"; */
 "Ptw-cf-zUg.text" = "Detail";
 
 /* Class = "IBUILabel"; text = "Nearest Station"; ObjectID = "Qv2-Pg-ESB"; */
-"Qv2-Pg-ESB.text" = "最寄り駅";
+"Qv2-Pg-ESB.text" = "Nearest Station";
 
 /* Class = "IBUINavigationItem"; title = "Machiawase"; ObjectID = "SKy-9D-CmH"; */
 "SKy-9D-CmH.title" = "Machiawase";
@@ -26,8 +27,7 @@
 "Vz4-4j-eJC.text" = "Label";
 
 /* Class = "IBUILabel"; text = "Address"; ObjectID = "aES-YG-dhG"; */
-"aES-YG-dhG.text" = "住所";
+"aES-YG-dhG.text" = "Address";
 
 /* Class = "IBUITextField"; placeholder = "Place"; ObjectID = "slm-gj-cg1"; */
 "slm-gj-cg1.placeholder" = "Place";
-

@@ -102,6 +102,7 @@
 		FB95832C170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
 		FB95832D170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB95832E170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB958333170EE92A00129CB2 /* MAWSPinDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSPinDetailViewController.h; sourceTree = "<group>"; };
 		FBEC1A8616CF987400442326 /* machiawase-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "machiawase-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEC1A8916CF987400442326 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBEC1A8B16CF987400442326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,7 +129,6 @@
 		FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSMachiawase.m; sourceTree = "<group>"; };
 		FBEC1ACD16D09CE800442326 /* MAWSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSAnnotation.h; sourceTree = "<group>"; };
 		FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSAnnotation.m; sourceTree = "<group>"; };
-		FBEC1AD116D0BBC500442326 /* MAWSPinDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSPinDetailViewController.h; sourceTree = "<group>"; };
 		FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSPinDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +162,7 @@
 			children = (
 				FBEC1AA716CF987500442326 /* MAWSViewController.h */,
 				FBEC1AA816CF987500442326 /* MAWSViewController.m */,
-				FBEC1AD116D0BBC500442326 /* MAWSPinDetailViewController.h */,
+				FB958333170EE92A00129CB2 /* MAWSPinDetailViewController.h */,
 				FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */,
 				FB9582F31708415400129CB2 /* MAWSMapViewController.h */,
 				FB9582F41708415400129CB2 /* MAWSMapViewController.m */,
@@ -320,6 +320,7 @@
 				FBEC1A8216CF987400442326 /* Sources */,
 				FBEC1A8316CF987400442326 /* Frameworks */,
 				FBEC1A8416CF987400442326 /* Resources */,
+				FB95832F170DA72300129CB2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -405,6 +406,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		FB95832F170DA72300129CB2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/scripts/update_storyboard_strings.sh";
+			showEnvVarsInLog = 0;
+		};
 		FBEC1AAD16CF987500442326 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
