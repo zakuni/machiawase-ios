@@ -4,3 +4,4 @@
 [submodule "scripts"]
 	path = scripts
 	url = https://gist.github.com/5007019.git
+  ignore = dirty
