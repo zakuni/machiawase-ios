@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MAWSMapViewController.h"
-#import "MAWSAnnotation.h"
 
-@interface MAWSTableViewController : UITableViewController
+@interface MAWSTableViewController : UITableViewController <UITextFieldDelegate>
 {
     UIView *footerView;
     NSDictionary *rendezvousResult;

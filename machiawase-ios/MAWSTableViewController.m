@@ -94,6 +94,22 @@
     return cell;
 }
 
+- (void)moveToNextField:(UITextField *)textField
+{
+    if (textField.tag == 0) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        
+        UITextField *nextField = (UITextField *)[cell viewWithTag:2];
+        [nextField becomeFirstResponder];
+    }
+    else
+    {
+        [self.view endEditing:YES];
+        [self buttonPushed:nil];
+    }
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
