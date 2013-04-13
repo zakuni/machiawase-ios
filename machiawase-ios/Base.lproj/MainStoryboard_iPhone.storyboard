@@ -28,9 +28,9 @@
                                             <color key="textColor" red="0.32156862749999998" green="0.40000000000000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Place" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="slm-gj-cg1">
+                                        <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="Place" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="slm-gj-cg1">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="215" id="LZ9-cf-hIE"/>
+                                                <constraint firstAttribute="width" constant="215" id="Joq-JW-ZYY"/>
                                                 <constraint firstAttribute="height" constant="30" id="heH-u1-SsE"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -41,8 +41,8 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="Vz4-4j-eJC" firstAttribute="top" secondItem="Yxa-Sf-TLi" secondAttribute="top" constant="17" id="7UF-Tm-cjk"/>
-                                    <constraint firstItem="slm-gj-cg1" firstAttribute="top" secondItem="Yxa-Sf-TLi" secondAttribute="top" constant="8" id="8bR-7I-Cyx"/>
                                     <constraint firstItem="slm-gj-cg1" firstAttribute="baseline" secondItem="Vz4-4j-eJC" secondAttribute="baseline" type="default" id="Iv5-vH-Si4"/>
+                                    <constraint firstItem="slm-gj-cg1" firstAttribute="centerY" secondItem="Yxa-Sf-TLi" secondAttribute="centerY" type="default" id="aNq-Wk-xEJ"/>
                                     <constraint firstItem="slm-gj-cg1" firstAttribute="leading" secondItem="Vz4-4j-eJC" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gCz-b7-6lY"/>
                                     <constraint firstItem="Vz4-4j-eJC" firstAttribute="leading" secondItem="Yxa-Sf-TLi" secondAttribute="leading" constant="20" type="default" id="ygv-Un-CLp"/>
                                 </constraints>

@@ -77,19 +77,66 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"EditableCell";
+    static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
-    // Configure the cell.
-    UILabel *label;
-    label = (UILabel *)[cell viewWithTag:1];
-    label.text = [NSString stringWithFormat:@"Place %d:", indexPath.row + 1];
+//
+//    // Configure the cell.
+//    UILabel *label;
+//    label = (UILabel *)[cell viewWithTag:1];
+//    label.text = [NSString stringWithFormat:@"Place %d:", indexPath.row + 1];
+//    
+//    UITextField *textField = (UITextField *)[cell viewWithTag:2];
+//    textField.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    textField.returnKeyType = UIReturnKeyGo;
+//    [textField addTarget:self
+//                  action:@selector(buttonPushed:)
+//        forControlEvents:UIControlEventEditingDidEndOnExit];
     
-    UITextField *textField = (UITextField *)[cell viewWithTag:2];
-    textField.returnKeyType = UIReturnKeyGo;
-    [textField addTarget:self
-                  action:@selector(buttonPushed:)
-        forControlEvents:UIControlEventEditingDidEndOnExit];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        
+        if ([indexPath section] == 0) {
+            UITextField *playerTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
+            playerTextField.adjustsFontSizeToFitWidth = YES;
+            playerTextField.textColor = [UIColor blackColor];
+            if ([indexPath row] == 0) {
+                playerTextField.placeholder = @"example@gmail.com";
+                playerTextField.keyboardType = UIKeyboardTypeEmailAddress;
+                playerTextField.returnKeyType = UIReturnKeyNext;
+            }
+            else {
+                playerTextField.placeholder = @"Required";
+                playerTextField.keyboardType = UIKeyboardTypeDefault;
+                playerTextField.returnKeyType = UIReturnKeyDone;
+                playerTextField.secureTextEntry = YES;
+            }
+            playerTextField.backgroundColor = [UIColor whiteColor];
+            playerTextField.autocorrectionType = UITextAutocorrectionTypeNo; // no auto correction support
+            playerTextField.autocapitalizationType = UITextAutocapitalizationTypeNone; // no auto capitalization support
+            playerTextField.textAlignment = UITextAlignmentLeft;
+            playerTextField.tag = 0;
+            //playerTextField.delegate = self;
+            
+            playerTextField.clearButtonMode = UITextFieldViewModeNever; // no clear 'x' button to the right
+            [playerTextField setEnabled: YES];
+            
+            [cell.contentView addSubview:playerTextField];
+        }
+    }
+    
+    if ([indexPath section] == 0) { // Email & Password Section
+        if ([indexPath row] == 0) { // Email
+            cell.textLabel.text = @"Email";
+        }
+        else {
+            cell.textLabel.text = @"Password";
+        }
+    }
+    else { // Login button section
+        cell.textLabel.text = @"Log in";
+    }
     
     return cell;
 }
