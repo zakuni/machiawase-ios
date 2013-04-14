@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuickDialog/QuickDialog.h>
 #import "MAWSMapViewController.h"
 
 @interface MAWSTableViewController : UITableViewController <UITextFieldDelegate>

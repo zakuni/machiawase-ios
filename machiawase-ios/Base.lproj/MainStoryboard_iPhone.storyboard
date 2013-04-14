@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="E2Y-XF-tKS" customClass="MAWSTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Fni-0q-SKP">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -62,7 +62,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5a-ob-A1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="307" y="-143"/>
+            <point key="canvasLocation" x="229" y="-433"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="slr-ub-cIR">
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Div-na-bOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="-193"/>
+            <point key="canvasLocation" x="828" y="92"/>
         </scene>
         <!--View Controller - Machiawase-->
         <scene sceneID="5">
@@ -236,6 +236,24 @@
             </objects>
             <point key="canvasLocation" x="1302" y="541"/>
         </scene>
+        <!--Root Dialog View Controller-->
+        <scene sceneID="Jbv-os-fHa">
+            <objects>
+                <viewController id="CXd-lM-hWE" customClass="MAWSRootDialogViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pTE-Ud-Z2b">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RQs-Ti-SWA"/>
+                    <connections>
+                        <segue destination="KMk-bS-DtI" kind="push" identifier="map" id="3nc-4W-Tft"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z15-dT-U15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="92"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="VGj-CB-bPE">
             <objects>
@@ -247,12 +265,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="E2Y-XF-tKS" kind="relationship" relationship="rootViewController" id="aCp-Lu-zb3"/>
+                        <segue destination="CXd-lM-hWE" kind="relationship" relationship="rootViewController" id="87M-ud-xX1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ug8-fs-PVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="294"/>
+            <point key="canvasLocation" x="-778" y="92"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -261,6 +279,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="3nc-4W-Tft"/>
         <segue reference="L9w-Wn-eLo"/>
     </inferredMetricsTieBreakers>
 </document>
