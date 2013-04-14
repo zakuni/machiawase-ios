@@ -10,18 +10,6 @@
 		1BEB4F74D0AF4FD7AD253704 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A247F00965416E96058467 /* libPods.a */; };
 		FB2DC5FB171A90D500F960A3 /* MAWSRootDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2DC5FA171A90D500F960A3 /* MAWSRootDialogViewController.m */; };
 		FB9582F51708415400129CB2 /* MAWSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582F41708415400129CB2 /* MAWSMapViewController.m */; };
-		FB95831B170C599A00129CB2 /* MessagePackPacker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582FA170C599A00129CB2 /* MessagePackPacker.m */; };
-		FB95831C170C599A00129CB2 /* MessagePackParser+Streaming.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582FC170C599A00129CB2 /* MessagePackParser+Streaming.m */; };
-		FB95831D170C599A00129CB2 /* MessagePackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582FE170C599A00129CB2 /* MessagePackParser.m */; };
-		FB95831E170C599A00129CB2 /* objectc.c in Sources */ = {isa = PBXBuildFile; fileRef = FB95830F170C599A00129CB2 /* objectc.c */; };
-		FB95831F170C599A00129CB2 /* unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = FB958310170C599A00129CB2 /* unpack.c */; };
-		FB958320170C599A00129CB2 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = FB958311170C599A00129CB2 /* version.c */; };
-		FB958321170C599A00129CB2 /* vrefbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = FB958312170C599A00129CB2 /* vrefbuffer.c */; };
-		FB958322170C599A00129CB2 /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = FB958313170C599A00129CB2 /* zone.c */; };
-		FB958323170C599A00129CB2 /* NSArray+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = FB958315170C599A00129CB2 /* NSArray+MessagePack.m */; };
-		FB958324170C599A00129CB2 /* NSData+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = FB958317170C599A00129CB2 /* NSData+MessagePack.m */; };
-		FB958325170C599A00129CB2 /* NSDictionary+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = FB958319170C599A00129CB2 /* NSDictionary+MessagePack.m */; };
-		FB958326170C599A00129CB2 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = FB95831A170C599A00129CB2 /* readme.md */; };
 		FBEC1A8A16CF987400442326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8916CF987400442326 /* UIKit.framework */; };
 		FBEC1A8C16CF987400442326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8B16CF987400442326 /* Foundation.framework */; };
 		FBEC1A8E16CF987500442326 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8D16CF987400442326 /* CoreGraphics.framework */; };
@@ -64,39 +52,6 @@
 		FB2DC5FA171A90D500F960A3 /* MAWSRootDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSRootDialogViewController.m; sourceTree = "<group>"; };
 		FB9582F31708415400129CB2 /* MAWSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSMapViewController.h; sourceTree = "<group>"; };
 		FB9582F41708415400129CB2 /* MAWSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSMapViewController.m; sourceTree = "<group>"; };
-		FB9582F8170C599A00129CB2 /* MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePack.h; sourceTree = "<group>"; };
-		FB9582F9170C599A00129CB2 /* MessagePackPacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePackPacker.h; sourceTree = "<group>"; };
-		FB9582FA170C599A00129CB2 /* MessagePackPacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePackPacker.m; sourceTree = "<group>"; };
-		FB9582FB170C599A00129CB2 /* MessagePackParser+Streaming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MessagePackParser+Streaming.h"; sourceTree = "<group>"; };
-		FB9582FC170C599A00129CB2 /* MessagePackParser+Streaming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MessagePackParser+Streaming.m"; sourceTree = "<group>"; };
-		FB9582FD170C599A00129CB2 /* MessagePackParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePackParser.h; sourceTree = "<group>"; };
-		FB9582FE170C599A00129CB2 /* MessagePackParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePackParser.m; sourceTree = "<group>"; };
-		FB958301170C599A00129CB2 /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
-		FB958302170C599A00129CB2 /* pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pack.h; sourceTree = "<group>"; };
-		FB958303170C599A00129CB2 /* pack_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pack_define.h; sourceTree = "<group>"; };
-		FB958304170C599A00129CB2 /* pack_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pack_template.h; sourceTree = "<group>"; };
-		FB958305170C599A00129CB2 /* sbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sbuffer.h; sourceTree = "<group>"; };
-		FB958306170C599A00129CB2 /* sysdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdep.h; sourceTree = "<group>"; };
-		FB958307170C599A00129CB2 /* unpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unpack.h; sourceTree = "<group>"; };
-		FB958308170C599A00129CB2 /* unpack_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unpack_define.h; sourceTree = "<group>"; };
-		FB958309170C599A00129CB2 /* unpack_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unpack_template.h; sourceTree = "<group>"; };
-		FB95830A170C599A00129CB2 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
-		FB95830B170C599A00129CB2 /* vrefbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vrefbuffer.h; sourceTree = "<group>"; };
-		FB95830C170C599A00129CB2 /* zbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbuffer.h; sourceTree = "<group>"; };
-		FB95830D170C599A00129CB2 /* zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zone.h; sourceTree = "<group>"; };
-		FB95830E170C599A00129CB2 /* msgpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msgpack.h; sourceTree = "<group>"; };
-		FB95830F170C599A00129CB2 /* objectc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objectc.c; sourceTree = "<group>"; };
-		FB958310170C599A00129CB2 /* unpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unpack.c; sourceTree = "<group>"; };
-		FB958311170C599A00129CB2 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version.c; sourceTree = "<group>"; };
-		FB958312170C599A00129CB2 /* vrefbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vrefbuffer.c; sourceTree = "<group>"; };
-		FB958313170C599A00129CB2 /* zone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zone.c; sourceTree = "<group>"; };
-		FB958314170C599A00129CB2 /* NSArray+MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MessagePack.h"; sourceTree = "<group>"; };
-		FB958315170C599A00129CB2 /* NSArray+MessagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MessagePack.m"; sourceTree = "<group>"; };
-		FB958316170C599A00129CB2 /* NSData+MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MessagePack.h"; sourceTree = "<group>"; };
-		FB958317170C599A00129CB2 /* NSData+MessagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MessagePack.m"; sourceTree = "<group>"; };
-		FB958318170C599A00129CB2 /* NSDictionary+MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MessagePack.h"; sourceTree = "<group>"; };
-		FB958319170C599A00129CB2 /* NSDictionary+MessagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MessagePack.m"; sourceTree = "<group>"; };
-		FB95831A170C599A00129CB2 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 		FB958327170C629D00129CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		FB958328170C629D00129CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		FB95832A170C62CF00129CB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
@@ -171,62 +126,6 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		FB9582F7170C599A00129CB2 /* msgpack */ = {
-			isa = PBXGroup;
-			children = (
-				FB9582F8170C599A00129CB2 /* MessagePack.h */,
-				FB9582F9170C599A00129CB2 /* MessagePackPacker.h */,
-				FB9582FA170C599A00129CB2 /* MessagePackPacker.m */,
-				FB9582FB170C599A00129CB2 /* MessagePackParser+Streaming.h */,
-				FB9582FC170C599A00129CB2 /* MessagePackParser+Streaming.m */,
-				FB9582FD170C599A00129CB2 /* MessagePackParser.h */,
-				FB9582FE170C599A00129CB2 /* MessagePackParser.m */,
-				FB9582FF170C599A00129CB2 /* msgpack_src */,
-				FB958314170C599A00129CB2 /* NSArray+MessagePack.h */,
-				FB958315170C599A00129CB2 /* NSArray+MessagePack.m */,
-				FB958316170C599A00129CB2 /* NSData+MessagePack.h */,
-				FB958317170C599A00129CB2 /* NSData+MessagePack.m */,
-				FB958318170C599A00129CB2 /* NSDictionary+MessagePack.h */,
-				FB958319170C599A00129CB2 /* NSDictionary+MessagePack.m */,
-				FB95831A170C599A00129CB2 /* readme.md */,
-			);
-			path = msgpack;
-			sourceTree = "<group>";
-		};
-		FB9582FF170C599A00129CB2 /* msgpack_src */ = {
-			isa = PBXGroup;
-			children = (
-				FB958300170C599A00129CB2 /* msgpack */,
-				FB95830E170C599A00129CB2 /* msgpack.h */,
-				FB95830F170C599A00129CB2 /* objectc.c */,
-				FB958310170C599A00129CB2 /* unpack.c */,
-				FB958311170C599A00129CB2 /* version.c */,
-				FB958312170C599A00129CB2 /* vrefbuffer.c */,
-				FB958313170C599A00129CB2 /* zone.c */,
-			);
-			path = msgpack_src;
-			sourceTree = "<group>";
-		};
-		FB958300170C599A00129CB2 /* msgpack */ = {
-			isa = PBXGroup;
-			children = (
-				FB958301170C599A00129CB2 /* object.h */,
-				FB958302170C599A00129CB2 /* pack.h */,
-				FB958303170C599A00129CB2 /* pack_define.h */,
-				FB958304170C599A00129CB2 /* pack_template.h */,
-				FB958305170C599A00129CB2 /* sbuffer.h */,
-				FB958306170C599A00129CB2 /* sysdep.h */,
-				FB958307170C599A00129CB2 /* unpack.h */,
-				FB958308170C599A00129CB2 /* unpack_define.h */,
-				FB958309170C599A00129CB2 /* unpack_template.h */,
-				FB95830A170C599A00129CB2 /* version.h */,
-				FB95830B170C599A00129CB2 /* vrefbuffer.h */,
-				FB95830C170C599A00129CB2 /* zbuffer.h */,
-				FB95830D170C599A00129CB2 /* zone.h */,
-			);
-			path = msgpack;
-			sourceTree = "<group>";
-		};
 		FBEC1A7D16CF987400442326 = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +162,6 @@
 		FBEC1A8F16CF987500442326 /* machiawase-ios */ = {
 			isa = PBXGroup;
 			children = (
-				FB9582F7170C599A00129CB2 /* msgpack */,
 				FBEC1A9816CF987500442326 /* MAWSAppDelegate.h */,
 				FBEC1A9916CF987500442326 /* MAWSAppDelegate.m */,
 				FBEC1AA116CF987500442326 /* MainStoryboard_iPhone.storyboard */,
@@ -394,7 +292,6 @@
 				FBEC1AA016CF987500442326 /* Default-568h@2x.png in Resources */,
 				FBEC1AA316CF987500442326 /* MainStoryboard_iPhone.storyboard in Resources */,
 				FBEC1AA616CF987500442326 /* MainStoryboard_iPad.storyboard in Resources */,
-				FB958326170C599A00129CB2 /* readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,17 +374,6 @@
 				FBEC1ACF16D09CE800442326 /* MAWSAnnotation.m in Sources */,
 				FBEC1AD316D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */,
 				FB9582F51708415400129CB2 /* MAWSMapViewController.m in Sources */,
-				FB95831B170C599A00129CB2 /* MessagePackPacker.m in Sources */,
-				FB95831C170C599A00129CB2 /* MessagePackParser+Streaming.m in Sources */,
-				FB95831D170C599A00129CB2 /* MessagePackParser.m in Sources */,
-				FB95831E170C599A00129CB2 /* objectc.c in Sources */,
-				FB95831F170C599A00129CB2 /* unpack.c in Sources */,
-				FB958320170C599A00129CB2 /* version.c in Sources */,
-				FB958321170C599A00129CB2 /* vrefbuffer.c in Sources */,
-				FB958322170C599A00129CB2 /* zone.c in Sources */,
-				FB958323170C599A00129CB2 /* NSArray+MessagePack.m in Sources */,
-				FB958324170C599A00129CB2 /* NSData+MessagePack.m in Sources */,
-				FB958325170C599A00129CB2 /* NSDictionary+MessagePack.m in Sources */,
 				FB2DC5FB171A90D500F960A3 /* MAWSRootDialogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
