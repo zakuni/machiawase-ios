@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1BEB4F74D0AF4FD7AD253704 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A247F00965416E96058467 /* libPods.a */; };
 		FB2DC5FB171A90D500F960A3 /* MAWSRootDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2DC5FA171A90D500F960A3 /* MAWSRootDialogViewController.m */; };
-		FB48676416DA0F0D008C1A28 /* MAWSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48676316DA0F0D008C1A28 /* MAWSTableViewController.m */; };
 		FB9582F51708415400129CB2 /* MAWSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582F41708415400129CB2 /* MAWSMapViewController.m */; };
 		FB95831B170C599A00129CB2 /* MessagePackPacker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582FA170C599A00129CB2 /* MessagePackPacker.m */; };
 		FB95831C170C599A00129CB2 /* MessagePackParser+Streaming.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582FC170C599A00129CB2 /* MessagePackParser+Streaming.m */; };
@@ -34,7 +33,6 @@
 		FBEC1AA016CF987500442326 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEC1A9F16CF987500442326 /* Default-568h@2x.png */; };
 		FBEC1AA316CF987500442326 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEC1AA116CF987500442326 /* MainStoryboard_iPhone.storyboard */; };
 		FBEC1AA616CF987500442326 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEC1AA416CF987500442326 /* MainStoryboard_iPad.storyboard */; };
-		FBEC1AA916CF987500442326 /* MAWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1AA816CF987500442326 /* MAWSViewController.m */; };
 		FBEC1AB116CF987500442326 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1AB016CF987500442326 /* SenTestingKit.framework */; };
 		FBEC1AB216CF987500442326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8916CF987400442326 /* UIKit.framework */; };
 		FBEC1AB316CF987500442326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8B16CF987400442326 /* Foundation.framework */; };
@@ -64,8 +62,6 @@
 		E9A247F00965416E96058467 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2DC5F9171A90D500F960A3 /* MAWSRootDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSRootDialogViewController.h; sourceTree = "<group>"; };
 		FB2DC5FA171A90D500F960A3 /* MAWSRootDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSRootDialogViewController.m; sourceTree = "<group>"; };
-		FB48676216DA0F0D008C1A28 /* MAWSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSTableViewController.h; sourceTree = "<group>"; };
-		FB48676316DA0F0D008C1A28 /* MAWSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSTableViewController.m; sourceTree = "<group>"; };
 		FB9582F31708415400129CB2 /* MAWSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSMapViewController.h; sourceTree = "<group>"; };
 		FB9582F41708415400129CB2 /* MAWSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSMapViewController.m; sourceTree = "<group>"; };
 		FB9582F8170C599A00129CB2 /* MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePack.h; sourceTree = "<group>"; };
@@ -122,8 +118,6 @@
 		FBEC1A9B16CF987500442326 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FBEC1A9D16CF987500442326 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FBEC1A9F16CF987500442326 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FBEC1AA716CF987500442326 /* MAWSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAWSViewController.h; sourceTree = "<group>"; };
-		FBEC1AA816CF987500442326 /* MAWSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAWSViewController.m; sourceTree = "<group>"; };
 		FBEC1AAF16CF987500442326 /* machiawase-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "machiawase-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEC1AB016CF987500442326 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBEC1AB816CF987500442326 /* machiawase-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "machiawase-iosTests-Info.plist"; sourceTree = "<group>"; };
@@ -169,14 +163,10 @@
 			children = (
 				FB2DC5F9171A90D500F960A3 /* MAWSRootDialogViewController.h */,
 				FB2DC5FA171A90D500F960A3 /* MAWSRootDialogViewController.m */,
-				FBEC1AA716CF987500442326 /* MAWSViewController.h */,
-				FBEC1AA816CF987500442326 /* MAWSViewController.m */,
 				FB958333170EE92A00129CB2 /* MAWSPinDetailViewController.h */,
 				FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */,
 				FB9582F31708415400129CB2 /* MAWSMapViewController.h */,
 				FB9582F41708415400129CB2 /* MAWSMapViewController.m */,
-				FB48676216DA0F0D008C1A28 /* MAWSTableViewController.h */,
-				FB48676316DA0F0D008C1A28 /* MAWSTableViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -483,11 +473,9 @@
 			files = (
 				FBEC1A9616CF987500442326 /* main.m in Sources */,
 				FBEC1A9A16CF987500442326 /* MAWSAppDelegate.m in Sources */,
-				FBEC1AA916CF987500442326 /* MAWSViewController.m in Sources */,
 				FBEC1ACB16CFDE8D00442326 /* MAWSMachiawase.m in Sources */,
 				FBEC1ACF16D09CE800442326 /* MAWSAnnotation.m in Sources */,
 				FBEC1AD316D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */,
-				FB48676416DA0F0D008C1A28 /* MAWSTableViewController.m in Sources */,
 				FB9582F51708415400129CB2 /* MAWSMapViewController.m in Sources */,
 				FB95831B170C599A00129CB2 /* MessagePackPacker.m in Sources */,
 				FB95831C170C599A00129CB2 /* MessagePackParser+Streaming.m in Sources */,
