@@ -46,8 +46,8 @@
             NSString *place1 = placeElement.textValue;
             NSString *place2 = placeElement2.textValue;
             
-            NSLog(@"%@", place1);
-            NSLog(@"%@", place2);
+            DDLogVerbose(@"%@", place1);
+            DDLogVerbose(@"%@", place2);
             MAWSMachiawase *machiawase = [[MAWSMachiawase alloc]init];
             [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
             [machiawase rendezvous:place1 with:place2 delegate:self];
@@ -77,7 +77,7 @@
 
 - (void)didReceiveResult:(NSDictionary *)result
 {
-    NSLog(@"%@", result);
+    DDLogVerbose(@"%@", result);
     [self loading:NO];
     rendezvousResult = result;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

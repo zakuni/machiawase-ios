@@ -7,12 +7,14 @@
 //
 
 #import "MAWSAppDelegate.h"
+#import "DDTTYLogger.h"
 
 @implementation MAWSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
     return YES;
 }
 							
