@@ -524,6 +524,7 @@
 		};
 		FBEC1AC516CF987500442326 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A33DBC370B45CFB206CEFE /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/machiawase-ios.app/machiawase-ios";
 				FRAMEWORK_SEARCH_PATHS = (
