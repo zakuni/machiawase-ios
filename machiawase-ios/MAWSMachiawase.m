@@ -27,7 +27,7 @@ id theDelegate;
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    NSLog(@"%@", [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
+    DDLogVerbose(@"%@", [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
     
     NSDictionary *resultDictionary = [data messagePackParse];
     
