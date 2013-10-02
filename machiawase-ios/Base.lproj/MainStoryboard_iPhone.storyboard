@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hWz-Hs-Fum">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.9" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hWz-Hs-Fum">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.9"/>
     </dependencies>
     <scenes>
         <!--Map View Controller-->
@@ -13,6 +14,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="G7l-tT-JDQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <connections>
                                     <outlet property="delegate" destination="KMk-bS-DtI" id="LUM-uR-AzP"/>
                                 </connections>
@@ -20,12 +22,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="trailing" secondItem="aWW-XJ-9jH" secondAttribute="trailing" type="default" id="1CA-PH-930"/>
-                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="top" secondItem="aWW-XJ-9jH" secondAttribute="top" type="default" id="4eo-eZ-bdg"/>
-                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="bottom" secondItem="aWW-XJ-9jH" secondAttribute="bottom" type="default" id="5ZH-Cc-I4v"/>
-                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="leading" secondItem="aWW-XJ-9jH" secondAttribute="leading" type="default" id="UBu-pM-Cpc"/>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="trailing" secondItem="aWW-XJ-9jH" secondAttribute="trailing" id="1CA-PH-930"/>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="top" secondItem="aWW-XJ-9jH" secondAttribute="top" id="4eo-eZ-bdg"/>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="bottom" secondItem="aWW-XJ-9jH" secondAttribute="bottom" id="5ZH-Cc-I4v"/>
+                            <constraint firstItem="G7l-tT-JDQ" firstAttribute="leading" secondItem="aWW-XJ-9jH" secondAttribute="leading" id="UBu-pM-Cpc"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="Z7K-07-RdN"/>
                     <connections>
                         <outlet property="rendezvousMapView" destination="G7l-tT-JDQ" id="FKT-Il-33c"/>
@@ -48,20 +51,21 @@
                             <tableViewSection id="ngm-Ib-HqL">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="aES-YG-dhG" detailTextLabel="KDj-Nk-dXV" style="IBUITableViewCellStyleValue1" id="Sbz-ns-rTo">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="35" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aES-YG-dhG">
-                                                    <rect key="frame" x="10" y="11" width="69" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="66" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="44" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-Nk-dXV">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="41" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-Nk-dXV">
+                                                    <rect key="frame" x="264" y="11" width="41" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,21 +75,21 @@
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Qv2-Pg-ESB" detailTextLabel="Ptw-cf-zUg" style="IBUITableViewCellStyleValue1" id="i7A-Qs-r6f">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="79" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Nearest Station" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qv2-Pg-ESB">
-                                                    <rect key="frame" x="10" y="11" width="125" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="122" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ptw-cf-zUg">
-                                                    <rect key="frame" x="246" y="11" width="44" height="21"/>
+                                                    <rect key="frame" x="264" y="11" width="41" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,6 +107,7 @@
                             <outlet property="delegate" destination="3jb-Tp-EQG" id="JB3-UU-6PO"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="daC-qx-1ec"/>
                     <connections>
                         <outlet property="addressCell" destination="Sbz-ns-rTo" id="tTF-BS-1ph"/>
@@ -122,6 +127,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="RQs-Ti-SWA"/>
                     <connections>
                         <segue destination="KMk-bS-DtI" kind="push" identifier="map" id="3nc-4W-Tft"/>
@@ -135,6 +141,7 @@
         <scene sceneID="VGj-CB-bPE">
             <objects>
                 <navigationController id="hWz-Hs-Fum" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dXY-EV-r6m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -151,7 +158,7 @@
         </scene>
     </scenes>
     <classes>
-        <class className="MAWSMapViewController" superclassName="UIViewController">
+        <class className="MAWSMapViewController" superclassName="QMapViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MAWSMapViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="rendezvousMapView" candidateClass="MKMapView"/>
@@ -169,6 +176,9 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="QMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QMapViewController.h"/>
         </class>
         <class className="QuickDialogController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QuickDialogController.h"/>

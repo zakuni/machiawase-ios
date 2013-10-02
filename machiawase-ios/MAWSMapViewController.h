@@ -10,8 +10,9 @@
 #import <MapKit/MapKit.h>
 #import "MAWSAnnotation.h"
 #import "MAWSPinDetailViewController.h"
+#import "QMapViewController.h"
 
-@interface MAWSMapViewController : UIViewController
+@interface MAWSMapViewController : QMapViewController
 @property (weak, nonatomic) IBOutlet MKMapView *rendezvousMapView;
 @property (weak, nonatomic) NSDictionary *rendezvousPlace;
 @end
