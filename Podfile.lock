@@ -1,16 +1,16 @@
 PODS:
   - CocoaLumberjack (1.6.2)
   - MessagePack (1.0.0)
-  - QuickDialog (0.7)
+  - QuickDialog (0.9)
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 1.6.2)
   - MessagePack (~> 1.0.0)
-  - QuickDialog (~> 0.7)
+  - QuickDialog (~> 0.9)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: d73e1e317ced14ab930797dda6c17156ff17aaa1
   MessagePack: 66a565c0c34ecdd83a84ae090d1a04ef24c88beb
-  QuickDialog: 66329ef69be6d6f85d6b1cbb2ea57eb904a2c5a7
+  QuickDialog: aea6a7b1a235ba0439065a45e5b124a8422f4e2c
 
-COCOAPODS: 0.18.1
+COCOAPODS: 0.25.0
