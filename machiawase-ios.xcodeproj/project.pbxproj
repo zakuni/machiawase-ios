@@ -14,7 +14,6 @@
 		FBEC1A8A16CF987400442326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8916CF987400442326 /* UIKit.framework */; };
 		FBEC1A8C16CF987400442326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8B16CF987400442326 /* Foundation.framework */; };
 		FBEC1A8E16CF987500442326 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8D16CF987400442326 /* CoreGraphics.framework */; };
-		FBEC1A9416CF987500442326 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBEC1A9216CF987500442326 /* InfoPlist.strings */; };
 		FBEC1A9616CF987500442326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1A9516CF987500442326 /* main.m */; };
 		FBEC1A9A16CF987500442326 /* MAWSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1A9916CF987500442326 /* MAWSAppDelegate.m */; };
 		FBEC1A9C16CF987500442326 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEC1A9B16CF987500442326 /* Default.png */; };
@@ -25,7 +24,6 @@
 		FBEC1AB116CF987500442326 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1AB016CF987500442326 /* SenTestingKit.framework */; };
 		FBEC1AB216CF987500442326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8916CF987400442326 /* UIKit.framework */; };
 		FBEC1AB316CF987500442326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8B16CF987400442326 /* Foundation.framework */; };
-		FBEC1ABB16CF987500442326 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBEC1AB916CF987500442326 /* InfoPlist.strings */; };
 		FBEC1ABE16CF987500442326 /* machiawase_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ABD16CF987500442326 /* machiawase_iosTests.m */; };
 		FBEC1AC816CFC1B200442326 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1AC716CFC1B100442326 /* MapKit.framework */; };
 		FBEC1ACB16CFDE8D00442326 /* MAWSMachiawase.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */; };
@@ -55,11 +53,6 @@
 		FB9582F41708415400129CB2 /* MAWSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSMapViewController.m; sourceTree = "<group>"; };
 		FB958327170C629D00129CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		FB958328170C629D00129CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		FB95832A170C62CF00129CB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
-		FB95832B170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
-		FB95832C170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
-		FB95832D170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FB95832E170C635F00129CB2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB958333170EE92A00129CB2 /* MAWSPinDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSPinDetailViewController.h; sourceTree = "<group>"; };
 		FBA0866C18011AE800A84613 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FBEC1A8616CF987400442326 /* machiawase-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "machiawase-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +60,6 @@
 		FBEC1A8B16CF987400442326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBEC1A8D16CF987400442326 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FBEC1A9116CF987500442326 /* machiawase-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "machiawase-ios-Info.plist"; sourceTree = "<group>"; };
-		FBEC1A9316CF987500442326 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBEC1A9516CF987500442326 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBEC1A9716CF987500442326 /* machiawase-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "machiawase-ios-Prefix.pch"; sourceTree = "<group>"; };
 		FBEC1A9816CF987500442326 /* MAWSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAWSAppDelegate.h; sourceTree = "<group>"; };
@@ -78,7 +70,6 @@
 		FBEC1AAF16CF987500442326 /* machiawase-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "machiawase-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEC1AB016CF987500442326 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBEC1AB816CF987500442326 /* machiawase-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "machiawase-iosTests-Info.plist"; sourceTree = "<group>"; };
-		FBEC1ABA16CF987500442326 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBEC1ABC16CF987500442326 /* machiawase_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = machiawase_iosTests.h; sourceTree = "<group>"; };
 		FBEC1ABD16CF987500442326 /* machiawase_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = machiawase_iosTests.m; sourceTree = "<group>"; };
 		FBEC1AC716CFC1B100442326 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +78,8 @@
 		FBEC1ACD16D09CE800442326 /* MAWSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSAnnotation.h; sourceTree = "<group>"; };
 		FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSAnnotation.m; sourceTree = "<group>"; };
 		FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSPinDetailViewController.m; sourceTree = "<group>"; };
+		FBF41FB7185C8158004F0560 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
+		FBF41FB8185C8158004F0560 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				FBEC1A9116CF987500442326 /* machiawase-ios-Info.plist */,
-				FBEC1A9216CF987500442326 /* InfoPlist.strings */,
 				FBEC1A9516CF987500442326 /* main.m */,
 				FBEC1A9716CF987500442326 /* machiawase-ios-Prefix.pch */,
 				FBEC1A9B16CF987500442326 /* Default.png */,
@@ -207,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				FBEC1AB816CF987500442326 /* machiawase-iosTests-Info.plist */,
-				FBEC1AB916CF987500442326 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -289,7 +280,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBEC1A9416CF987500442326 /* InfoPlist.strings in Resources */,
 				FBEC1A9C16CF987500442326 /* Default.png in Resources */,
 				FBA0866D18011AE800A84613 /* Images.xcassets in Resources */,
 				FBEC1A9E16CF987500442326 /* Default@2x.png in Resources */,
@@ -303,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBEC1ABB16CF987500442326 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,21 +393,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FBEC1A9216CF987500442326 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBEC1A9316CF987500442326 /* en */,
-				FB95832D170C635F00129CB2 /* ja */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		FBEC1AA116CF987500442326 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FB958327170C629D00129CB2 /* Base */,
-				FB95832A170C62CF00129CB2 /* en */,
-				FB95832B170C635F00129CB2 /* ja */,
+				FBF41FB7185C8158004F0560 /* ja */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -427,18 +406,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				FB958328170C629D00129CB2 /* Base */,
-				FB95832C170C635F00129CB2 /* ja */,
+				FBF41FB8185C8158004F0560 /* ja */,
 			);
 			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		FBEC1AB916CF987500442326 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBEC1ABA16CF987500442326 /* en */,
-				FB95832E170C635F00129CB2 /* ja */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
