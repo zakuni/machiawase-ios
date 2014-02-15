@@ -11,6 +11,7 @@
 		FB2DC5FB171A90D500F960A3 /* MAWSRootDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2DC5FA171A90D500F960A3 /* MAWSRootDialogViewController.m */; };
 		FB9582F51708415400129CB2 /* MAWSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9582F41708415400129CB2 /* MAWSMapViewController.m */; };
 		FBA0866D18011AE800A84613 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA0866C18011AE800A84613 /* Images.xcassets */; };
+		FBC0544218AF6E15003712B7 /* MAWSMachiawaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC0544118AF6E15003712B7 /* MAWSMachiawaseTests.m */; };
 		FBEC1A8A16CF987400442326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8916CF987400442326 /* UIKit.framework */; };
 		FBEC1A8C16CF987400442326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8B16CF987400442326 /* Foundation.framework */; };
 		FBEC1A8E16CF987500442326 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8D16CF987400442326 /* CoreGraphics.framework */; };
@@ -55,6 +56,7 @@
 		FB958328170C629D00129CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		FB958333170EE92A00129CB2 /* MAWSPinDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSPinDetailViewController.h; sourceTree = "<group>"; };
 		FBA0866C18011AE800A84613 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBC0544118AF6E15003712B7 /* MAWSMachiawaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSMachiawaseTests.m; sourceTree = "<group>"; };
 		FBEC1A8616CF987400442326 /* machiawase-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "machiawase-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEC1A8916CF987400442326 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBEC1A8B16CF987400442326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -188,6 +190,7 @@
 		FBEC1AB616CF987500442326 /* machiawase-iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				FBC0544118AF6E15003712B7 /* MAWSMachiawaseTests.m */,
 				FBEC1ABC16CF987500442326 /* machiawase_iosTests.h */,
 				FBEC1ABD16CF987500442326 /* machiawase_iosTests.m */,
 				FBEC1AB716CF987500442326 /* Supporting Files */,
@@ -377,6 +380,7 @@
 			files = (
 				FBEC1ABE16CF987500442326 /* machiawase_iosTests.m in Sources */,
 				FBEC1ACC16CFDE8D00442326 /* MAWSMachiawase.m in Sources */,
+				FBC0544218AF6E15003712B7 /* MAWSMachiawaseTests.m in Sources */,
 				FBEC1AD016D09CE800442326 /* MAWSAnnotation.m in Sources */,
 				FBEC1AD416D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */,
 			);
