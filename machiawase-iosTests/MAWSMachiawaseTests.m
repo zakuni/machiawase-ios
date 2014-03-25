@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 zakuni. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "MAWSMachiawase.h"
 
-@interface MAWSMachiawaseTests : SenTestCase
+@interface MAWSMachiawaseTests : XCTestCase
 
 @end
 
@@ -29,7 +29,7 @@
 
 - (void)testInit
 {
-    STAssertNotNil([[MAWSMachiawase alloc]init], @"hoge");
+    XCTAssertNotNil([[MAWSMachiawase alloc]init], @"hoge");
 }
 
 @end

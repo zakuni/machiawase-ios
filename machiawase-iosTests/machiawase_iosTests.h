@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 zakuni. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface machiawase_iosTests : SenTestCase
+@interface machiawase_iosTests : XCTestCase
 
 @end

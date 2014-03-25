@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FBEC1AAE16CF987500442326"
-               BuildableName = "machiawase-iosTests.octest"
+               BuildableName = "machiawase-iosTests.xctest"
                BlueprintName = "machiawase-iosTests"
                ReferencedContainer = "container:machiawase-ios.xcodeproj">
             </BuildableReference>

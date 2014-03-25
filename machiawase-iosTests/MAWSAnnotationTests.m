@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 zakuni. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "MAWSAnnotation.h"
 
-@interface MAWSAnnotationTests : SenTestCase
+@interface MAWSAnnotationTests : XCTestCase
 
 @end
 
@@ -29,10 +29,10 @@
 
 - (void)testInit
 {
-    STAssertNotNil([[MAWSAnnotation alloc]init], nil);
+    XCTAssertNotNil([[MAWSAnnotation alloc]init]);
 
     CLLocationCoordinate2D coordinate;
-    STAssertNotNil([[MAWSAnnotation alloc]initWithCoordinate:coordinate], nil);
+    XCTAssertNotNil([[MAWSAnnotation alloc]initWithCoordinate:coordinate]);
 }
 
 @end
