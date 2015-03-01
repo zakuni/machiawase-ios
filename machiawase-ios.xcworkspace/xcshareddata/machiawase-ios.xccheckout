@@ -10,29 +10,29 @@
 	<string>machiawase-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AE762313-C573-4906-AFFE-A44826E55026</key>
+		<key>406358D31A35E79DB6D81073D291724C72A97114</key>
 		<string>https://github.com/zakuni/machiawase-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>machiawase-ios.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AE762313-C573-4906-AFFE-A44826E55026</key>
+		<key>406358D31A35E79DB6D81073D291724C72A97114</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zakuni/machiawase-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AE762313-C573-4906-AFFE-A44826E55026</string>
+	<string>406358D31A35E79DB6D81073D291724C72A97114</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AE762313-C573-4906-AFFE-A44826E55026</string>
+			<string>406358D31A35E79DB6D81073D291724C72A97114</string>
 			<key>IDESourceControlWCCName</key>
 			<string>machiawase-ios</string>
 		</dict>
