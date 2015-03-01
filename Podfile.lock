@@ -1,20 +1,20 @@
 PODS:
-  - CocoaLumberjack (1.8.1):
-    - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (1.8.1)
-  - CocoaLumberjack/Extensions (1.8.1):
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
   - MessagePack (1.0.0)
   - QuickDialog (0.9.1)
 
 DEPENDENCIES:
-  - CocoaLumberjack (~> 1.8.1)
+  - CocoaLumberjack (~> 1.9)
   - MessagePack (~> 1.0.0)
   - QuickDialog (~> 0.9.1)
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 9d198d6e19909b3b113a38c5f06f7bb8eedd0427
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
   MessagePack: c55b65c05ad745847208d9809a4419afb8149f59
   QuickDialog: 8e6cb91067913194dfa187e339dc20dee8ee250f
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0
