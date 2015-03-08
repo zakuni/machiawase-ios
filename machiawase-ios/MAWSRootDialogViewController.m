@@ -49,11 +49,10 @@
             
             DDLogVerbose(@"%@", place1);
             DDLogVerbose(@"%@", place2);
-            Machiawase *m = [Machiawase new];
-            [m rendezvous:place1 place2:place2];
-            MAWSMachiawase *machiawase = [[MAWSMachiawase alloc]init];
+            Machiawase *machiawase = [Machiawase new];
+            machiawase.delegate = self;
             [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-            [machiawase rendezvous:place1 with:place2 delegate:self];
+            [machiawase rendezvous:place1 place2:place2];
         };
         
         QSection *buttonSection = [[QSection alloc] init];

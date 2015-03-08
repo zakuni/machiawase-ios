@@ -6,7 +6,6 @@
 //  Copyright (c) 2013年 zakuni. All rights reserved.
 //
 
-#import "MAWSMachiawase.h"
 #import "MAWSMapViewController.h"
 
 @interface MAWSRootDialogViewController : QuickDialogController

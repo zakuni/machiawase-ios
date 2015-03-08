@@ -29,8 +29,6 @@
 		FBEC1AB316CF987500442326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1A8B16CF987400442326 /* Foundation.framework */; };
 		FBEC1ABE16CF987500442326 /* machiawase_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ABD16CF987500442326 /* machiawase_iosTests.m */; };
 		FBEC1AC816CFC1B200442326 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEC1AC716CFC1B100442326 /* MapKit.framework */; };
-		FBEC1ACB16CFDE8D00442326 /* MAWSMachiawase.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */; };
-		FBEC1ACC16CFDE8D00442326 /* MAWSMachiawase.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */; };
 		FBEC1ACF16D09CE800442326 /* MAWSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */; };
 		FBEC1AD016D09CE800442326 /* MAWSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */; };
 		FBEC1AD316D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */; };
@@ -83,8 +81,6 @@
 		FBEC1ABC16CF987500442326 /* machiawase_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = machiawase_iosTests.h; sourceTree = "<group>"; };
 		FBEC1ABD16CF987500442326 /* machiawase_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = machiawase_iosTests.m; sourceTree = "<group>"; };
 		FBEC1AC716CFC1B100442326 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		FBEC1AC916CFDE8D00442326 /* MAWSMachiawase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSMachiawase.h; sourceTree = "<group>"; };
-		FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSMachiawase.m; sourceTree = "<group>"; };
 		FBEC1ACD16D09CE800442326 /* MAWSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWSAnnotation.h; sourceTree = "<group>"; };
 		FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSAnnotation.m; sourceTree = "<group>"; };
 		FBEC1AD216D0BBC500442326 /* MAWSPinDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWSPinDetailViewController.m; sourceTree = "<group>"; };
@@ -181,8 +177,6 @@
 				FB9582F617084C8400129CB2 /* ViewController */,
 				FBEC1ACD16D09CE800442326 /* MAWSAnnotation.h */,
 				FBEC1ACE16D09CE800442326 /* MAWSAnnotation.m */,
-				FBEC1AC916CFDE8D00442326 /* MAWSMachiawase.h */,
-				FBEC1ACA16CFDE8D00442326 /* MAWSMachiawase.m */,
 				FBA0866C18011AE800A84613 /* Images.xcassets */,
 				FBEC1A9016CF987500442326 /* Supporting Files */,
 				FB5AE2551AAAB2DF002616C1 /* machiawase-ios-Bridging-Header.h */,
@@ -375,7 +369,6 @@
 			files = (
 				FBEC1A9616CF987500442326 /* main.m in Sources */,
 				FBEC1A9A16CF987500442326 /* MAWSAppDelegate.m in Sources */,
-				FBEC1ACB16CFDE8D00442326 /* MAWSMachiawase.m in Sources */,
 				FBEC1ACF16D09CE800442326 /* MAWSAnnotation.m in Sources */,
 				FBEC1AD316D0BBC500442326 /* MAWSPinDetailViewController.m in Sources */,
 				FB9582F51708415400129CB2 /* MAWSMapViewController.m in Sources */,
@@ -389,7 +382,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEC1ABE16CF987500442326 /* machiawase_iosTests.m in Sources */,
-				FBEC1ACC16CFDE8D00442326 /* MAWSMachiawase.m in Sources */,
 				FBC0544218AF6E15003712B7 /* MAWSMachiawaseTests.m in Sources */,
 				FBEC1AD016D09CE800442326 /* MAWSAnnotation.m in Sources */,
 				FBD7037118AF74840083D4AB /* MAWSAnnotationTests.m in Sources */,
